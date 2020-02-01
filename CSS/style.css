@@ -1,0 +1,165 @@
+/* 
+    Primary Color: #22b2da
+    Secondary Color: #3b4a6b
+    Tertiary Color: #f23557
+
+    text color: #000000
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Navbar */
+header {
+  background-color: white;
+  box-shadow: 0px 3px 7px rgba(151, 151, 151, 0.5);
+  position: sticky;
+  top:0px;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  min-height: 11vh;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar links and logo link */
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+nav ul,
+nav h1 {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+section h2 {
+  font-size: 5rem;
+  /* color: white; */
+}
+
+section.home {
+  height: 100vh;
+ /* background-color: #071a52; */
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.box1 {
+  
+  grid-row: 1/3;
+  color: white;
+  text-align: center;
+
+}
+.image {
+  background-image: url(/images/silhouette-photo-of-fir-trees-2140977.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  height: 100vh;
+}
+
+.box1-txt-container {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 p {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.button {
+
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  width: 20rem;
+  background-color: white;
+  border: none;
+  border-radius: 5rem;
+}
+
+.button:link,
+.button:visited {
+  color: #3b4a6b;
+}
+
+.button:hover,
+.button:active {
+  background-color: #f0d43a;
+  color: #3b4a6b;
+}
+
+.box1 a {
+  color: black;
+  text-decoration: none;
+
+}
+
+.box3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top:2rem ;
+  background-color: #3b4a6b;
+  color: white;
+
+}
+
+.box4 {
+  background-color: #3b4a6b;
+  grid-column: 2/3;
+  text-align: center;
+  padding-top: 4rem;
+  color: white;
+}
+
+.txt_type {
+  overflow: hidden;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+section.about {
+  background-color: #eaefff;
+  height: 100vh;
+}
